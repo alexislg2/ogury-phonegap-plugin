@@ -1,0 +1,1 @@
+cordova plugin add github... --variable API_KEY=your_api_key
