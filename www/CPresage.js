@@ -3,3 +3,4 @@ var CPresage = {
 		cordova.exec(onAdEvent, onAdNotFound, 'CPresage', 'adToServe', [{}]);
 	}
 };
+module.exports = CPresage;

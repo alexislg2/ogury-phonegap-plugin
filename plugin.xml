@@ -3,16 +3,18 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="org.ogury.cordova.plugin"
       version="0.1.0">
-  <name>phonegap-ogury-plugin</name>
+  <name>OguryPhonegapPlugin</name>
   <description>phonegap ogury plugin</description>
   <author>Fergal Condron, fergal@clubscores.ie</author>
 
-  <js-module src="www/cPresage.js" name="PresagePlugin">
-  </js-module>
 
   <!-- android -->
   <platform name="android">
+      <js-module src="www/CPresage.js" name="Ogury">
+        <clobbers target="window.Ogury" />
+      </js-module>
     <preference name="API_KEY" />
+    
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="OguryPlugin">
           <param name="android-package" value="org.ogury.cordova.plugin" />
@@ -50,7 +52,8 @@
       <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     </config-file>
 
+    <source-file src="src/android/res/values/styles.xml" target-dir="res/values" />
 	  <source-file src="src/android/ogury/presage-lib-1.6.0.jar" target-dir="libs" />
-    <source-file src="src/android/ogury/CPresage.java" target-dir="src/org/apache/cordova/core" />      
+    <source-file src="src/android/ogury/CPresage.java" target-dir="src/org/apache/cordova/ogury" />      
   </platform>
 </plugin>
