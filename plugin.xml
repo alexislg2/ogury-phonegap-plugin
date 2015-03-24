@@ -7,17 +7,17 @@
   <description>phonegap ogury plugin</description>
   <author>Fergal Condron, fergal@clubscores.ie</author>
 
-
   <!-- android -->
   <platform name="android">
-      <js-module src="www/CPresage.js" name="Ogury">
-        <clobbers target="window.Ogury" />
+      <js-module src="www/CPresage.js" name="CPresage">
+        <clobbers target="window.CPresage" />
       </js-module>
     <preference name="API_KEY" />
     
     <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="OguryPlugin">
-          <param name="android-package" value="org.ogury.cordova.plugin" />
+        <feature name="CPresage">
+          <param name="android-package" value="io.presage.CPresage" />
+          <param name="onload" value="true" />
         </feature>
     </config-file>
 
@@ -54,6 +54,6 @@
 
     <source-file src="src/android/res/values/styles.xml" target-dir="res/values" />
 	  <source-file src="src/android/ogury/presage-lib-1.6.0.jar" target-dir="libs" />
-    <source-file src="src/android/ogury/CPresage.java" target-dir="src/org/apache/cordova/ogury" />      
+    <source-file src="src/android/ogury/CPresage.java" target-dir="src/io/presage" />      
   </platform>
 </plugin>
