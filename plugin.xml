@@ -19,16 +19,6 @@
         </feature>
     </config-file>
 
-    <config-file target="res/values/styles.xml" parent="/*">
-      <style name="Presage.Theme.Transparent" parent="android:Theme">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">false</item>
-      </style>
-    </config-file>
-
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <!-- PRESAGE LIBRARY -->
       <meta-data android:name="presage_key" android:value="$API_KEY"/>
