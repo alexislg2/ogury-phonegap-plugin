@@ -1,6 +1,6 @@
 To install:
 ```
-cordova plugin add https://github.com/condrof/ogury-phonegap-plugin.git --variable API_KEY=your_api_key
+cordova plugin add org.ogury.cordova.plugin --variable API_KEY=your_api_key
 ```
 
 To use:
@@ -26,5 +26,12 @@ var app = {
 
 }
 ```
+
+To use with phonegap build:
+```
+  <gap:plugin name="org.ogury.cordova.plugin" source="plugins.cordova.io">
+    <param name="API_KEY" value="your_api_key" />
+  </gap:plugin>
+```  
 
 See Ogury admin panel for more details
