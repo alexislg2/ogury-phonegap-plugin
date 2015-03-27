@@ -1,0 +1,10 @@
+{
+    "version": "0.1.2",
+    "name": "org.ogury.cordova.plugin",
+    "cordova_name": "OguryPhonegapPlugin",
+    "description": "phonegap ogury plugin",
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

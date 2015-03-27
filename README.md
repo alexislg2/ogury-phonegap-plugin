@@ -1,9 +1,11 @@
 To install:
+
 ```
 cordova plugin add org.ogury.cordova.plugin --variable API_KEY=your_api_key
 ```
 
 To use:
+
 ```
 var app = {
   onDeviceReady: function() {
@@ -28,6 +30,7 @@ var app = {
 ```
 
 To use with phonegap build:
+
 ```
   <gap:plugin name="org.ogury.cordova.plugin" source="plugins.cordova.io">
     <param name="API_KEY" value="your_api_key" />
