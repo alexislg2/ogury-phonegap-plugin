@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="org.ogury.cordova.plugin"
-      version="0.1.2">
+      version="0.1.4">
   <name>OguryPhonegapPlugin</name>
   <description>phonegap ogury plugin</description>
   <author>Fergal Condron, fergal@clubscores.ie</author>
