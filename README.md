@@ -9,7 +9,7 @@ cordova plugin add org.ogury.cordova.plugin --variable API_KEY=your_api_key
 ```
 var app = {
   onDeviceReady: function() {
-    Ogury.adToServe(app.onAdEvent, app.onAdNotFound);
+    CPresage.adToServe(app.onAdEvent, app.onAdNotFound);
   },
   onAdEvent: function(event) {
     console.log('onAdEvent called here');
