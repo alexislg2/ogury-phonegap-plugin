@@ -13,7 +13,7 @@
 	<clobbers target="CPresage" />
       </js-module>
     <preference name="API_KEY" />
-    
+
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="CPresage">
           <param name="android-package" value="io.presage.CPresage" />
@@ -53,7 +53,7 @@
     </config-file>
 
     <source-file src="src/android/res/values/styles.xml" target-dir="res/values" />
-	  <source-file src="src/android/ogury/presage-lib-1.6.1.jar" target-dir="libs" />
-    <source-file src="src/android/ogury/CPresage.java" target-dir="src/io/presage" />      
+	  <source-file src="src/android/ogury/presage-lib-1.7.2.jar" target-dir="libs" />
+    <source-file src="src/android/ogury/CPresage.java" target-dir="src/io/presage" />
   </platform>
 </plugin>
